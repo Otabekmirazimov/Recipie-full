@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer {
+    .align-element {
+        @apply max-w-6xl mx-auto px-4
+    }
+}
+
+.modes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.colors {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    transform: scale(.96);
+    transition: all 0.3s ease;
+}
+.colors:hover {
+    cursor: pointer;
+}
+.colors:active {
+    transform: scale(1.25);
+}
